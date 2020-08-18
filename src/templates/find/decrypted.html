@@ -1,0 +1,21 @@
+<div>
+    <hr />
+    <p class="lead">Password: <code>{{data.decrypted}}</code></p>
+    <p class="lead">You Paid: {{data.price}}</p>
+      {{#data.expiration}}
+        <p class="lead">Password Expires On: {{data.expiration}}</p>
+      {{/data.expiration}}
+</div>
+<form id="unlock" class="form-group">
+    </hr>
+    <label 
+        style="color: hsla(0,0%,10%,.7);     font-size: 13px;    font-weight: 500;" 
+        for="lookup"
+    >Key To Unlock Your Password</label>
+    <input 
+        placeholder="LOOKUP KEY" 
+        id="lookup" 
+        name="lookup"
+        class="sq-input real"></input>
+    <button id="btnSearchRecord" data-role="form" data-attr="submit" class="btn button-credit-card">SEARCH</button>
+</form>

@@ -1,0 +1,31 @@
+<div style="word-break: break-word">
+    <hr />
+
+    <p class="lead"><code>{{data.id}}</code></p>
+    <p class="lead">This is the password you're unlocking. The price to unlock it is: <b>${{data.price}}</b>. The proceeds benefit <b>{{data.cause}}.</b>{{#data.expiration}}The lock expires on <b>{{data.expiration}}</b> at which point you owe nothing.{{/data.expiration}}</p>
+
+    <hr />
+</div>
+
+<div class="form-container" id="unlock_square">
+    <div class="form-group">
+        <label style="color: hsla(0,0%,10%,.7);     font-size: 13px;    font-weight: 500;" >CARD INFORMATION</label>
+        <div id="sq-card-number-{{data.id}}" data-role="square" data-squareattr="cardNumber" data-placeholder="Card Number" ></div>
+        <span data-flag-for="sq-card-number-{{data.id}}" class="light-hidden"></span>
+    </div>
+    <div class="form-container">
+        <div class="form-group  col-md-6 col-sm-6 col-xs-6" style="padding-left: 0px; padding-right: 0px;">
+            <div id="sq-expiration-date-{{data.id}}" data-role="square" data-squareattr="cvv" data-placeholder="CVV" class="third" ></div>
+            <span data-flag-for="sq-expiration-date-{{data.id}}" class="light-hidden"></span>
+        </div>
+        <div class="form-group  col-md-6 col-sm-6 col-xs-6" style="padding-left: 0px; padding-right: 0px;">
+            <div id="sq-cvv-{{data.id}}" data-role="square" data-squareattr="expirationDate" data-placeholder="MM/YY" class="third" ></div>
+            <span data-flag-for="sq-cvv-{{data.id}}" class="light-hidden"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <div id="sq-postal-code-{{data.id}}" data-role="square" data-squareattr="postalCode" data-placeholder="Postal Code" class="third"></div>
+        <span data-flag-for="sq-postal-code-{{data.id}}" class="light-hidden"></span>
+    </div>
+    <button id="btnUnLockRecord-{{data.id}}" data-role="form" data-attr="submit" class="btn button-credit-card">Pay ${{data.price}}</button>
+</div> <!-- end #form-container -->

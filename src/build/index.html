@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Addiction Locker</title>
+        
+        <link rel="stylesheet" href="./tidy.css">
+        
+        <meta name="description" content="Hide passwords from yourself. Donate to chairty to get them back.">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--
+        <meta name="google-site-verification" content="FILL-ME-OUT">
+        <link rel="canonical" href="FILL-ME-OUT">
+        -->
+</head>
+
+
+<body>
+    <!-- BIG PRETTY MASTHEAD -->
+    <!-- BIG PRETTY MASTHEAD -->
+    <!-- BIG PRETTY MASTHEAD -->
+    <div class="bs-docs-header" id="content" tabindex="-1"> 
+       <div class="container">
+            <div class="col-md-12">
+                <h1>Stop wasting your life looking at your phone. How?
+                    <br />
+                    <br />Lock yourself out of addictive sites and apps.
+                    <br />
+                    <br /> 
+                     <span class="loud"><a style="color: white; text-decoration: underline red;" rel="noopener" target="_blank" href="https://givewell.org">Donate to Charity</a></span> to get back in.
+                </h1> 
+            </div>
+          
+            <div class="col-md-12">
+                <p>Hide passwords to addictive things from yourself and donate to charity to get them back. Simple. Effective.</p>
+            </div>
+          
+       </div>
+    </div>
+    <!-- // BIG PRETTY MASTHEAD -->
+    <!-- // BIG PRETTY MASTHEAD -->
+    <!-- // BIG PRETTY MASTHEAD -->
+    
+
+
+
+
+
+    <!-- PAYMENT FORMS -->
+    <!-- PAYMENT FORMS -->
+    <!-- PAYMENT FORMS -->
+    <div class="normal-docs-header" id="payment-forms">
+        <div class="container normal">
+            <div>
+                <div class="container">
+                    <div class="col-md-8 col-md-offset-2 col-sm-12">
+
+                        <h2 style="margin-bottom: 30px;">WHAT IS THIS?</h2>
+
+                        <p class="lead">Its an anonymous password manager (no accounts, no e-mails, no trackers) that makes you donate to charity to access your passwords.</p>
+
+                    </div>
+
+                    <!-- THIS IS THE TICKER AT THE BOTTOM... -->
+                    <div class="marquee">
+                          <p class="">The average smartphone user checks their device 85 times per day and spends around two hours per day on social media and related messaging services - Newport, Cal. Digital Minimalism &#8226 
+                          The news is an addictive product. Like cigarettes, this product can have a profound negative impact on your health. Almost without exception it will make you lonelier, more anxious, more distrustful of others, and more depressed. - Taibbi, Matt. Hate Inc. &#8226
+                          The tycoons of social media have to stop pretending that they&#39re friendly nerd gods building a better world and admit they&#39re just tobacco farmers in T-shirts selling an addictive product to children. - Maher, Bill. Real Time, (5/12/17)  &#8226
+                          Your life is passing you by while you're coming up with a witty tweet nobody will care about in an hour. &#8226
+                          On your deathbed, will you really regret not spending more time liking things on facebook than say spending time with your kids?
+                          </p>
+                    </div>
+                    
+                </div>
+                <hr />
+            </div>
+        
+            <!-- SECTION HEADER -->
+            <!-- -->
+            <div class="row fancy">
+                <h1>Try it out, why not?</h1>
+                <h3>(It costs $1 and all profits go to charity...)</h3>
+            </div>
+            <!-- -->
+            
+            <!-- PSEUDO SUB-SECTION HEADER   -->
+            <!-- PSEUDO SUB-SECTION HEADER   -->
+            <!-- PSEUDO SUB-SECTION HEADER   -->
+            
+            <!-- FOR WHEN ITS SMALL, SO USER -->
+            <!-- CAN TOGGLE SECTIONS         -->
+            <div style="margin-bottom: 30px;" class="hide-big col-sm-5 col-xs-12" id="form-toggle">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <h2 style="text-align: center;">
+                                [ 
+                                    <a id="btnLockForm" role="button" data-role="form-toggle" data-attr="lock">LOCK</a> | 
+                                    <a id="btnUnLockForm" role="button" data-role="form-toggle" data-attr="unlock">UNLOCK</a> 
+                                ]
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END PSEUDO SUB-SECTION HEADER   -->
+            <!-- END PSEUDO SUB-SECTION HEADER   -->
+            <!-- END PSEUDO SUB-SECTION HEADER   -->
+            <div class="col-md-8 col-md-offset-2 col-sm-12">
+                <!-- FORM 1 -->
+                <!-- FORM 1 -->
+                <!-- FORM 1 -->
+                <div class="col-sm-5 col-xs-12 hide-small" id="form-1">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <h2 class="hide-small" style="text-align: center;">LOCK</h2>
+                            </div>
+                            <form id="lock">
+                                <hr />
+                                <div id="lock_results"></div>
+                                
+                                <!-- INPUT: PASSWORD -->
+                                <div class="form-group">
+                                    <label 
+                                        style="color: hsla(0,0%,10%,.7);     font-size: 13px;    font-weight: 500;"
+                                        for="message"
+                                    >Password You Want to Hide</label>
+                                    <input 
+                                        data-role="form" 
+                                        data-attr="msg" 
+                                        placeholder="password" 
+                                        type="password" 
+                                        id="message" 
+                                        name="message"
+                                        required 
+                                        minlength="1" 
+                                        class="sq-input real" 
+                                    />
+                                    <span data-flag-for="message" class="light-hidden">TBD</span>
+                                </div>
+                                <!-- /// INPUT: PASSWORD -->
+                                
+                                <!-- INPUT: PRICE -->
+                                <div class="form-group">
+                                   <label 
+                                    style="color: hsla(0,0%,10%,.7);     font-size: 13px;    font-weight: 500;"
+                                    for="price"
+                                    >What You'll Donate to Recover Password</label>
+                                   <input 
+                                    id="price" 
+                                    name="price"
+                                    data-role="form" 
+                                    placeholder="$5.00" 
+                                    type="number" 
+                                    min="3.00" 
+                                    max="1000.00" 
+                                    step="0.01" 
+                                    class="sq-input real" 
+                                    required 
+                                    />
+                                    <span data-flag-for="price" class="light-hidden"></span>
+                                </div>
+                                <!-- /// INPUT: PRICE -->
+                                
+                                <!-- INPUT: CAUSE: INVISIBLE -->
+                                <div  style="display: none;" class="form-group">
+                                   <label style="color: hsla(0,0%,10%,.7);     font-size: 13px;    font-weight: 500;" >Who You Want to Donate To</label>
+                                   <select id="cause" data-role="form"  class="sq-input real" required>
+                                          <option selected value="GiveWell.org">GiveWell.org</option>
+                                   </select>
+                                    <span data-flag-for="cause" class="light-hidden"></span>
+                                </div>
+                                <!-- /// INPUT: CAUSE: INVISIBLE -->
+                                
+                                <!-- INPUT: EXPIRATION -->
+                                <div class="form-group">
+                                    <label for="expiration" style="color: hsla(0,0%,10%,.7);     font-size: 13px;    font-weight: 500;" >Lock Expiration Date (<i style="color: black; font-style: italic;">Optional</i>)</label>
+                                    <input id="expiration" type="date" class="sq-input real" min="7" max="27394" />
+                                    <span data-flag-for="expiration" class="light-hidden"></span>
+                                </div>
+                                <!-- /// INPUT: EXPIRATION -->
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- PAYMENT FORM -->
+                    <div class="form-container" id="lock_square">
+                        <div class="form-group">
+                            <label style="color: hsla(0,0%,10%,.7);     font-size: 13px;    font-weight: 500;" >CARD INFORMATION</label>
+                            <div id="sq-card-number" data-role="square" data-squareattr="cardNumber" data-placeholder="Card Number" ></div>
+                            <span data-flag-for="sq-card-number" class="light-hidden"></span>
+                        </div>
+                        <div class="form-container">
+                            <div class="form-group  col-md-6 col-sm-6 col-xs-6" style="padding-left: 0px; padding-right: 0px;">
+                                <div id="sq-expiration-date" data-role="square" data-squareattr="cvv" data-placeholder="CVV" class="third" ></div>
+                                <span data-flag-for="sq-expiration-date" class="light-hidden"></span>
+                            </div>
+                            <div class="form-group  col-md-6 col-sm-6 col-xs-6" style="padding-left: 0px; padding-right: 0px;">
+                                <div id="sq-cvv" data-role="square" data-squareattr="expirationDate" data-placeholder="MM/YY" class="third" ></div>
+                                <span data-flag-for="sq-cvv" class="light-hidden"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div id="sq-postal-code" data-role="square" data-squareattr="postalCode" data-placeholder="Postal Code" class="third"></div>
+                            <span data-flag-for="sq-postal-code" class="light-hidden"></span>
+                        </div>
+                        <button id="btnCreateRecord" data-role="form" data-attr="submit" class="btn button-credit-card">Pay $1.00</button>
+                    </div> <!-- end #form-container -->
+
+                </div>
+                <!-- END FORM 1 -->
+                <!-- END FORM 1 -->
+                <!-- END FORM 1 -->
+
+
+                <!-- FORM 2 -->
+                <!-- FORM 2 -->
+                <!-- FORM 2 -->
+                <div id="form-2" class="hide-small col-sm-5 col-sm-offset-2 col-xs-12">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <h2 class="hide-small" style="text-align: center;">UNLOCK</h2>
+                            </div>
+                            <div id="unlock_results"></div>
+                            <form id="outer-unlock" class="form-group"></form>
+                        </div>
+                    </div>
+                </div>
+                <!-- END FORM 2 -->
+                <!-- END FORM 2 -->
+                <!-- END FORM 2 -->
+            </div>
+        </div>
+    </div>
+    <!-- END PAYMENT FORMS -->
+    <!-- END PAYMENT FORMS -->
+    <!-- END PAYMENT FORMS -->
+    
+    <!-- FAQ -->
+    <!-- FAQ -->
+    <!-- FAQ -->
+    <div id="faq" style="margin-top: 40px; padding-top: 55px;">
+        <div class="container">
+            <hr />
+            <div class="col-md-8 col-md-offset-2 col-sm-12">
+
+                <h2 style="margin-bottom: 30px;">HOW DOES IT WORK?</h2>
+
+                <p class="lead">Its a password manager. Fill out the form above, and it'll generate a link for you to bookmark. When you want your password back, go to that link.
+                </p>
+                
+                <h2 style="margin-bottom: 30px;">QUESTIONS AND ANSWERS</h2>
+                
+                <p class="lead">tldr; I built this because I eventually cheat whatever I set up to limit my own screentime, because I know the password. This 'app' solves that problem for me.</p>
+                
+                <p class="lead">You can use it with anything where you set a password. I use <a href="https://squareup.com/">Square</a> to process payments and native encryption to protect your password. *I* never see your password or credit card data.</p>
+                
+                <p class="lead">All profits go to <a href="https://givewell.org">Give Well Charities</a> (which you should check out).</p>
+                
+                <p class="lead">Questions, issues, or concerns. Shoot me a note at <a href="mailto:justin@addictionlocker.com" rel="noopener" target="_blank">justin@addictionlocker.com</a>.
+
+            </div>
+
+        </div>
+    </div>
+    <!-- FAQ -->
+    <!-- FAQ -->
+    <!-- FAQ -->
+
+    
+    <footer class="bs-docs-footer">
+        <div class="container">
+            <p>
+                Designed and built by <a href="mailto:justin@addictionlocker.com" rel="noopener" target="_blank">me</a>. Would love to hear your feedback, issues or concerns. Shoot me a note at <a href="mailto:justin@addictionlocker.com" rel="noopener" target="_blank">justin@addictionlocker.com</a>.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+    <!-- link to the SqPaymentForm library -->
+        
+    <!-- build:remove:dev-->
+    <script type="text/javascript" rel="dns-prefetch" src="https://js.squareup.com/v2/paymentform"></script>
+    <!-- /build -->
+    
+    <script src="./output.big.js" rel="preconnect"></script>
+
+    <script>
+
+        //
+        // Lazy method to test what environment we're in, and what variables we should use...
+        //
+        if(/\:\/\/(amazonaws|localhost|dev\.)/.test(window.location.href)){
+            window.env = "dev";
+        } else {
+            window.env = "prod";
+        }
+        
+        //
+        // Instantiate our lock form...
+        //
+        window.AllForm = new AllForms();
+        
+        
+        //
+        // Lazily test browser capabilities
+        // and nag the user if we fail...
+        //
+        setTimeout(function(){
+            
+            // Test Encryption
+            if(!EzCrypto){
+                alert("Your Browser Does Not Support Native Encryption. Please Try a Different Browser");
+            }
+            
+            EzCrypto.encrypt("WOW!")
+                .then(d => {console.log("Encryption Appears OK")})
+                .catch(e => {alert("Your Browser Does Not Support Native Encryption. Please Try a Different Browser")})
+
+        
+            // Did Square load?
+            if(typeof SqPaymentForm === "undefined"){
+                alert("Payment Processor cannot be reached now. Please Try again later. Sorry about this.");
+            }
+        
+        },1500)
+        
+    </script>
+
+</html>

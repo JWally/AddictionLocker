@@ -1,0 +1,7 @@
+<div>
+    <p class="lead">Password: <code>{{data.decrypted}}</code></p>
+    <p class="lead">You Paid: {{data.price}}</p>
+      {{#data.expiration}}
+        <p class="lead">Password Expires On: {{data.expiration}}</p>
+      {{/data.expiration}}
+</div>

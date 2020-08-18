@@ -1,0 +1,174 @@
+@-ms-viewport {
+    width: device-width;
+}
+@-o-viewport {
+    width: device-width;
+}
+@viewport {
+    width: device-width;
+}
+
+body {
+    position: relative;
+}
+
+#content:focus {
+    outline: 0;
+}
+
+span.loud {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+b.loud{
+    text-decoration: underline;
+}
+
+a.active{
+    text-decoration-line: underline;
+}
+
+.shadow{
+    text-shadow: 1px 1px 20px whitesmoke;
+}
+
+.bs-docs-header {
+    position: relative;
+    padding: 30px 0;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.bs-docs-header {
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+.bs-docs-header h1 {
+    margin-top: 0;
+    color: #fff;
+}
+.bs-docs-header p {
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 1.4;
+}
+.bs-docs-header .container {
+    position: relative;
+}
+
+.fancy.row h1 {
+    font-size: 60px;
+} 
+
+.fancy.row h1, .fancy.row h3{
+    text-align: center;
+}
+
+.fancy.row{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*
+*
+* LITTLE THINGS
+*
+*
+*/
+@media (max-width: 768px){
+    .hide-small{
+        display: none;
+    }
+}
+
+/*
+*
+* B I G  THINGS
+*
+*
+*/
+@media (min-width: 768px) {
+    .hide-big{
+        display: none;
+    }
+    
+    .bs-docs-header {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        font-size: 30px;
+    }
+    .bs-docs-header h1 {
+        font-size: 60px;
+        line-height: 1;
+    }
+    
+    .fancy.row h1 {
+        font-size: 50px;
+        margin-bottom:42px;
+    } 
+    
+    .fancy.row h1, .fancy.row h3{
+        text-align: center;
+    }
+    
+    .fancy.row{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+
+}
+:hover > .anchorjs-link {
+    opacity: 0.75;
+    -webkit-transition: color 0.16s linear;
+    -o-transition: color 0.16s linear;
+    transition: color 0.16s linear;
+}
+:hover > .anchorjs-link:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+body {
+    color: #5a5a5a;
+}
+
+input{
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px;
+    background-color: transparent;
+}
+
+select{
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px;
+    background-color: transparent;
+}
+
+select:focus, textarea:focus, input:focus{
+    outline: none;
+}
+
+::placeholder{
+    font-size: 16px;
+    line-height: 24px;
+    background-color: transparent;
+    color: #999
+}
+
+p.lead{
+    margin-bottom: 35px;
+}
+
+input[type="date"]
+{
+    display:block;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    min-height: 1.2em;
+}
