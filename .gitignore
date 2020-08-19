@@ -1,4 +1,9 @@
 node_modules/
 dist/
+src/build/*.html
+src/build/*.js
+src/build/*.css
+src/css/output.big.css
+src/js/dev/dev/brother.js
 DEV.bat
 PROD.bat
