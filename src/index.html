@@ -125,7 +125,7 @@
                                 <!-- INPUT: PASSWORD -->
                                 <div class="form-group">
                                     <label 
-                                        style="color: hsla(0,0%,10%,.7);     font-size: 13px;    font-weight: 500;"
+                                        class="std"
                                         for="message"
                                     >Password You Want to Hide</label>
                                     <input 
@@ -145,10 +145,7 @@
                                 
                                 <!-- INPUT: PRICE -->
                                 <div class="form-group">
-                                   <label 
-                                    style="color: hsla(0,0%,10%,.7);     font-size: 13px;    font-weight: 500;"
-                                    for="price"
-                                    >What You'll Donate to Recover Password</label>
+                                   <label class="std" for="price">What You'll Donate to Recover Password</label>
                                    <input 
                                     id="price" 
                                     name="price"
@@ -167,7 +164,7 @@
                                 
                                 <!-- INPUT: CAUSE: INVISIBLE -->
                                 <div  style="display: none;" class="form-group">
-                                   <label style="color: hsla(0,0%,10%,.7);     font-size: 13px;    font-weight: 500;" >Who You Want to Donate To</label>
+                                   <label class="std">Who You Want to Donate To</label>
                                    <select id="cause" data-role="form"  class="sq-input real" required>
                                           <option selected value="GiveWell.org">GiveWell.org</option>
                                    </select>
@@ -177,7 +174,10 @@
                                 
                                 <!-- INPUT: EXPIRATION -->
                                 <div class="form-group">
-                                    <label for="expiration" style="color: hsla(0,0%,10%,.7);     font-size: 13px;    font-weight: 500;" >Lock Expiration Date (<i style="color: black; font-style: italic;">Optional</i>)</label>
+                                    <label 
+                                        for="expiration" 
+                                        class="std" 
+                                    >Lock Expiration Date (<i style="color: black; font-style: italic;">Optional</i>)</label>
                                     <input id="expiration" type="date" class="sq-input real" min="7" max="27394" />
                                     <span data-flag-for="expiration" class="light-hidden"></span>
                                 </div>
@@ -189,7 +189,7 @@
                     <!-- PAYMENT FORM -->
                     <div class="form-container" id="lock_square">
                         <div class="form-group">
-                            <label style="color: hsla(0,0%,10%,.7);     font-size: 13px;    font-weight: 500;" >CARD INFORMATION</label>
+                            <label class="std" >CARD INFORMATION</label>
                             <div id="sq-card-number" data-role="square" data-squareattr="cardNumber" data-placeholder="Card Number" ></div>
                             <span data-flag-for="sq-card-number" class="light-hidden"></span>
                         </div>

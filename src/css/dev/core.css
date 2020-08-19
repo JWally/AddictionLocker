@@ -172,3 +172,9 @@ input[type="date"]
     -moz-appearance: textfield;
     min-height: 1.2em;
 }
+
+label.std{
+    color: hsla(0,0%,10%,.7);
+    font-size: 13px;
+    font-weight: 500;
+}
